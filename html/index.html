@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pâtisserie</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Pâtisserie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home"><i class="fas fa-home"></i>   Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products"><i class="fas fa-birthday-cake"></i>   Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i>  About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i>   Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cart"><i class="fas fa-shopping-cart"></i>  Cart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="jumbotron">
+        <h1>Welcome to Our Pâtisserie</h1>
+        <p>Delicious pastries made with love</p>
+    
+    </header>
+
+  
+    <section id="products" class="container">
+        <br><br><br>
+        <h2 class="text-center my-4" style="color: #6f4f28;font-family: 'Cookie', cursive;">Our Products</h2>
+        
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/chocolate_lava_cake.webp" class="card-img-top" alt="Chocolate Lava Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Lava Cake</h5>
+                        <p class="card-text">$9</p>
+                        <a href="chocolate_lava_cake.html" class="btn btn-primary">View Details</a>
+                        <button class="btn btn-success" onclick="addToCart('Chocolate Lava Cake', 9)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/tiramisu.jpg" class="card-img-top" alt="Tiramisu">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiramisu</h5>
+                        <p class="card-text">$8</p>
+                        <a href="tiramisu.html" class="btn btn-primary">View Details</a>
+                        <button class="btn btn-success" onclick="addToCart('Tiramisu', 8)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/cheesecake.jpg" class="card-img-top" alt="Cheesecake">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheesecake</h5>
+                        <p class="card-text">$10</p>
+                        <a href="cheesecake.html" class="btn btn-primary">View Details</a>
+                        <button class="btn btn-success" onclick="addToCart('Cheesecake', 7)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/croissantAuBeurre.avif" class="card-img-top" alt="Butter Croissant">
+                    <div class="card-body">
+                        <h5 class="card-title">Butter Croissant</h5>
+                        <p class="card-text">$6</p>
+                        <a href="ButterCroissan.html" class="btn btn-primary">View Details</a>
+                        <button class="btn btn-success" onclick="addToCart('Butter Croissant', 6)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/baguette.jpg" class="card-img-top" alt="Chocolate Lava Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Baguette</h5>
+                        <p class="card-text">$7</p>
+                        <a href="chocolate_lava_cake.html" class="btn btn-primary">View Details</a>
+                        <button class="btn btn-success" onclick="addToCart('Baguette', 7)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/tarte.webp" class="card-img-top" alt="Chocolate Lava Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Cake</h5>
+                        <p class="card-text">$20</p>
+                        <a href="chocolate_lava_cake.html" class="btn btn-primary">View Details</a>
+                        <button class="btn btn-success" onclick="addToCart('Birthday Cake', 20)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+    <header class="jumbotron text-center">
+        <h1 style="color: #6f4f28;font-family: 'Cookie', cursive;">Shopping Cart</h1>
+    </header>
+
+    <section id="cart" class="container">
+        <br><br><br>
+        <h2 style="color: #6f4f28;font-family: 'Cookie', cursive;">Your Cart</h2>
+        <ul id="cart-list" class="list-group mb-3">
+            <!-- Cart items will be populated here by JavaScript -->
+        </ul>
+        <p>Total Price: $<span id="total-price">0.00</span></p>
+        <button class="btn btn-success" onclick="checkout()">Checkout</button>
+    </section>
+
+    <section id="about" class="container mt-5">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="about-text">Since our inception in 1990, our pâtisserie has been dedicated to crafting delightful pastries that bring joy to every occasion. We take immense pride in using only the freshest ingredients and traditional techniques to create pastries that are both indulgent and memorable.</p>
+                <p class="about-text">Our skilled team of bakers combines expertise and passion to produce a variety of baked goods, each with its unique flavor and character. Whether you are celebrating a special event or simply enjoying a treat, our goal is to make every experience with our pastries extraordinary.</p>
+                <p class="about-text">We believe in the art of baking and the joy of sharing our creations with you. Thank you for being a part of our journey and for allowing us to be a part of your sweet moments.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="/images/patesserie.jpg" alt="About Us" class="img-fluid rounded shadow-lg">
+            </div>
+        </div>
+    </section>
+    
+   <br><br><br> 
+   <section id="contact" class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+        <div class="col-md-6 contact-info">
+            <h4>Address :</h4>
+            <p>123 Main Street, Sweetville</p>
+        </div>
+        <div class="col-md-6 contact-info">
+            <h4>Contact Information :</h4>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> <a href="mailto:info@patisserie.com">info@patisserie.com</a></p>
+        </div>
+    </div>
+</section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+body {
+
+    background-color: #d2b59b;  
+}
+nav {
+    background: linear-gradient(135deg, #6f4f28, #a57d48);
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+nav a {
+    color: #fff;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #a57d48;
+    color: #ffeb3b;
+    transform: scale(1.05);
+}
+
+nav a:active {
+    color: #ffeb3b;
+    background-color: #8e6e3b;
+    transform: scale(0.95);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffeb3b;
+    background-color: #a57d48;
+    transform: scale(1.05);
+}
+
+.navbar-brand {
+    font-family: 'Cookie', cursive;
+}
+
+header#home {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+    background-size: 100% 600px;
+    background-repeat: no-repeat; 
+    background-position: center;
+    transition: background-image 1s ease-in-out; 
+    opacity: 0.9; 
+    z-index: -1; 
+}
+
+header#home h1, header#home p {
+    margin: 0;
+    padding: 0;
+}
+
+header#home h1 {
+    font-size: 3em;
+}
+
+header#home p {
+    font-size: 1.5em;
+}
+
+
+/* Styles pour la section About Us */
+#about {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    border-radius: 8px;
+}
+
+#about h2 {
+    color: #6f4f28;
+    font-family: 'Cookie', cursive;
+}
+
+#about .about-text {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5em;
+    margin-left: 20px;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #6f4f28;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour la section Contact Us */
+#contact {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                url('/images/chokolatImage.avif') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    border-radius: 8px;
+}
+
+#contact h2 {
+    color: #6f4f28;
+    font-family: 'Cookie', cursive;
+}
+
+.contact-info h4 {
+    text-align: center;
+    margin-left: 20px;
+    color: #6f4f28;
+    font-size: 1.2em;
+}
+
+.contact-info p {
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #333;
+    text-align: center;
+}
+
+.contact-info a {
+    margin-left: 20px;
+    color: #6f4f28;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+/* Styles pour la section du panier */
+#cart-list {
+    
+    margin-top: 20px;
+}
+
+#cart-list .list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-list .item-name {
+    font-weight: bold;
+}
+
+/* Styles pour les boutons dans les cartes */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card-img-top {
+    max-height:300px;
+    object-fit: cover;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-buttons {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+    margin-top: 15px; 
+}
+
+#cart-list .item-price,
+#cart-list .item-quantity {
+    color: #6f4f28;
+}
+
+header.jumbotron {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+}
+
+.btn-success {
+    margin-top: 20px;
+}
+
+
+:root {
+    --chocolate-color: #4e3a2f; 
+    --caramel-color: #d2b59b;  
+}
+
+/* Style pour les boutons "View Details" */
+.btn-primary {
+    background-color: var(--caramel-color);
+    border-color: var(--chocolate-color);
+    color: var(--chocolate-color); 
+}
+
+.btn-primary:hover {
+    background-color: var(--chocolate-color);
+    border-color: var(--caramel-color);
+    color: #fff; 
+}
+
+/* Style pour les boutons "Add to Cart" */
+.btn-success {
+    background-color: var(--chocolate-color);
+    border-color: var(--caramel-color);
+    color: var(--caramel-color); 
+}
+
+.btn-success:hover {
+    background-color: var(--caramel-color);
+    border-color: var(--chocolate-color);
+    color: var(--chocolate-color); 
+}
